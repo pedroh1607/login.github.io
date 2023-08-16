@@ -1,0 +1,127 @@
+body {
+    background: linear-gradient(90deg, #00474c 0%, #031156 45%, #490074 100%);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 12%;
+}
+
+.gradient-um {
+    width: 1067px;
+    height: 668px;
+    border-radius: 84px;
+    box-shadow: 29px 29px 29px 0px rgba(0, 0, 0, 0.25), inset 0px 0px 150px 1000px rgba(255, 255, 255, 0.03), inset 10px 10px 17px 5px rgba(255, 255, 255, 0.048);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-input {
+    width: 700px;
+    height: 60px;
+    border-radius: 84px;
+    background: transparent;
+    flex-direction: column;
+    display: flex;
+    margin: 40px;
+    margin-left: 0px;
+    border: 2px solid #3d3c3d;
+    box-shadow: inset 5px 10px 25px 3px rgba(0, 0, 0, 0.562), 
+    -15px -15px 29px -20px rgba(255, 255, 255, 0.414),
+                20px 10px 12px 7px rgba(0, 0, 0, 0.534) ;
+             
+
+}
+
+.text-input {
+
+    padding-left: 9%;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: #928ba2;
+}
+
+::placeholder {
+    color: #928ba2;
+}
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    border: 2px solid #414141;
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 10px 10px 5px 2px rgba(0, 0, 0, 0.414) inset, 10px 10px 10px 1px rgba(0, 0, 0, 0.414), -10px -10px 19px -9px rgba(255, 255, 255, 0.414);
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    left: 0.2em;
+    bottom: 0.2em;
+    background-color: rgb(247, 247, 247);
+    border-radius: inherit;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+    box-shadow: 0px 6px 3px 0px rgba(0, 0, 0, 0.414) inset
+}
+
+.switch input:checked+.slider {
+    box-shadow: 0 0 20px rgb(0, 255, 242);
+    border: 2px solid #0974f1;
+}
+
+.switch input:checked+.slider:before {
+    transform: translateX(1.5em);
+}
+
+.button {
+    margin-top: 250px;
+    margin-left: -561px;
+    padding: 1.3em 8em;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #1abed8;
+    border: none;
+    border-radius: 45px;
+    box-shadow: inset 4px 4px 10px 4px rgba(252, 252, 252, 0.414), 10px 10px 4px 0px rgba(0, 0, 0, 0.301), inset -10px -10px 10px 4px rgba(0, 0, 0, 0.301), -15px -9px 15px -5px rgba(0, 0, 0, 0.315);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    position: absolute;
+}
+
+.button:hover {
+    background-color: #38f8ff;
+    box-shadow: 0px 15px 20px rgba(0, 255, 200, 0.562);
+    color: #000000;
+    transform: translateY(-7px);
+}
+
+.button:active {
+    transform: translateY(-1px);
+}
